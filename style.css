@@ -1,1072 +1,408 @@
-@charset "UTF-8";
-/*
-Theme Name:olgoosci
-Theme URI: 
-Author: the سجاد عنایتی
-Author URI: 
-Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
-Requires at least: WordPress 4.9.6
-Version: 1.4
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentynineteen
-Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+/* استایل‌های اختصاصی صفحات مدیریت */
+/* بازنویسی استایل‌های وردپرس */
+body.wp-admin #wpcontent {
+    padding-left: 0 !important;
+}
 
+body.wp-admin .wrap {
+    all: initial !important;
+    font-family: 'PeydaWeb', Tahoma, sans-serif !important;
+    padding: 20px !important;
+    background: #fff !important;
+    margin: 20px 20px 20px 0 !important;
+}
 
-*/
-
-body {
-    font-family: PeydaWeb !important;
+/* اجبار به استفاده از استایل‌های ما */
+body.wp-admin .wrap * {
+    font-family: 'PeydaWeb', Tahoma, sans-serif !important;
 }
-title1 {
-    color: #fff !important;
-    font-family: PeydaWeb!important;
-    font-size: 11pt !important;
-    font-weight: bold !important;
-    direction: rtl;
-}
-.slides {
-    
-    margin-top: 23px;
-}
-rs-module {
-  
-}
-titr2 {
-    font-family: PeydaWeb;
-    color: #f8d513;
-    font-size: 14pt;
-    font-weight: bold;
-    margin-bottom: 10px;
-direction: rtl !important;}
-section.slider {
-    /* margin-bottom: 44px; */
-    /* margin-top: 21px; */
-    /* background-image: url(./img/head.jpg); */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* min-height: 800px; */
+/* استایل کانتینر */
+.wp-admin .wrap {
+    padding: 20px;
     background: #fff;
-}
-section.about {
-    margin-bottom: 32px;
-    background-image: url(./img/backk.png);
-    background-size: 870px;
-}
-section.news {
-    /* margin-bottom: 17px; */
-    background-image: url(./img/map.jpg);
-    padding-top: 112px;
-    padding-bottom: 45px;
-}
-section.newss {
-    margin-bottom: 17px;
-}
-section.mutli {
-    margin-bottom: 17px;
-}
-section.logos {
-    margin-bottom: 17px;
-}
-section.ax {
-    margin-bottom: 17px;
-}
-.newsbox {/* padding: 12px; */border-radius: 17px;/* margin-right: 10px; */min-height: 172px !important;margin-bottom: 12px;/* border: 1px solid #fff; */}
-.newsbox2 {
-  /* height: 677px; */
-  background: #fff;
-  border-radius: 17px;
-  margin-bottom: 10px;
-}
-p.tit {
-    text-align: right;
-    margin-top: 8px;
-    font-size: 17pt;
-    font-weight: bold;
-    color: #dde3d5;
-    direction: rtl;
-    /* border-right: 3px solid #e7b96b; */
-    padding: 7px;
-    background: #294f12;
-    border-radius: 9px;
-}
-p.tit1 {
-    text-align: right;
-    margin-top: 25px;
-    font-size: 16pt;
-    font-weight: bolder;
-    color: #000;
-    direction: rtl;
-    border-bottom: 3px solid #20bdbe;
-    padding-bottom: 12px;
-}
-.des {text-align: right;direction: rtl;}
-
-.time {text-align: right;direction: rtl;font-size: 9pt;color: #858380;border-right: 3px solid #fff;padding-right: 8px;}
-p.about {text-align: right;color: #fff;font-size: 12pt;margin-top: 76px;direction: rtl;text-align: justify;font-weight: 200;}
-
-.boxx {border-radius: 31px;
-    box-shadow: 0px 10px 10px rgb(0 0 0 / 25%);
-    background: #f7f7f7;
-    
-    
-    padding-left: 50px;
-    padding-right: 50px;
-    
-    
-    height: 182px;}
-    
-    section.footer2 {background: #57585a;min-height: 302px;border-radius: 16px;padding: 21px;margin-bottom: 15px;}
-section.footer {background: #363434;/* min-height: 182px; *//* border-radius: 16px; */padding: 21px;/* margin-bottom: 15px; */}
-h5 {text-align: right;
-    font-size: 13pt;
-    word-spacing: -3pt;
-    margin-bottom: 19px;
-    color: #0c1a10;}
-
-ul {direction: rtl;
-    text-align: right;
-    list-style: none;
-    padding-right: 12px;
-    font-size: 10pt;
-    line-height: 25pt;
-    color: #070707;
-    /* border-right: 3px solid red; */
-    float: right;}
-
-.socialicons {direction: rtl;
-    text-align: right;
-    margin-right: 12px;
-    float: right;}
-    td {
-    width: 100px;
-}
-.col-md-2.newsbox {
-    height: 70px;
-    margin-left: 10px;
-    margin-top: 15px;
-}
-.sabt {
-    background: #d70000;
-    text-align: center;
-    padding: 18px;
-    font-size: 13pt;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 14px;
-    margin-top: 15px;
-}
-.sabt1 {
-    background: #000;
-    text-align: center;
-    padding: 18px;
-    font-size: 10pt;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 14px;
-    margin-top: 15px;
-    width: 125px;
-    float: right;
-}
-figure.wp-block-table {
-    margin-top: 16px;
-}
-.meno {
-    padding: 16px;
-    margin-top: 13px;
-    margin-bottom: 12px;
-    background: #141415;
-    height: 78px;
-    border-radius: 16px;
-}
-.parallax2 {
-    /* background-image: url(./img/back.jpg); */
-    min-height: 198px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 24px;
-    padding: 59px;
-    background: #fbaa34;
-    padding-top: 3px;
-}
-.parallax4 {
-    background-image: url(./img/back1.jpg);
-    min-height: 155px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 24px;
-    /* padding: 8px; */
-    margin-bottom: 30px;
-    background: #efa226;
-}
-.parallax3 {
-   min-height: 349px;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   /* padding: 7px; */
+    border-radius: 12px;
+    margin: 20px 20px 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-img.post {
-    width: 100%;
-    height: 282px;
-    object-fit: cover;
-    /* border-radius: 13px; */
-}
-img.post1 {
-    width: 100%;
-    /* height: 318px; */
-    object-fit: cover;
-    border-radius: 19px;
-    border: 3px solid #fff;
-}
-
-p.tit2 {
-    text-align: right;
-    /* margin-top: 8px; */
-    font-size: 17pt;
+/* استایل تایتل */
+.wp-admin h1 {
     color: #196ab4;
-    direction: rtl;
-    margin-bottom: 7px;
-    font-family: peydaweb;
-    direction: rtl;
-}
-
-
-.texttt {
-    color: #fff;
-    font-size: 18px;
+    font-family: 'PeydaWeb';
     font-weight: bold;
-}
-p.fot {
-    text-align: justify;
-    direction: rtl;
-    border-right: 3px solid #ae8d50;
-    padding-right: 14px;
-    /* border-radius: 10px; */
-    font-size: 10pt;
-    color: #dde3d5;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eaeaea;
 }
 
-strong.fat {
-    font-size: 11pt;
-    font-weight: bold;
-    color: #fff;
-}
-section.nama {
-    background: #5e5c5c;
-    height: 64px;
-    margin-bottom: 15px;
-    padding: 7px;
-    border-radius: 15px;
+/* استایل ساب‌منو */
+.wp-admin h2 {
+    font-family: 'PeydaWeb';
+    color: #333;
+    font-weight: 600;
 }
 
-.namas {
-    color: #fff;
-    font-size: 12pt;
-    font-weight: bold;
-}
-.av {
-    text-align: justify;
-    direction: rtl;
-    font-size: 13pt;
-    color: #7a7979;
-    margin-top: 6px;
-}
-.cat {
-    height: 100px;
-    background: #000;
-    position: relative;
-    top: 8px;
-    border: 1px solid #fff;
-    border-radius: 17px;
-}
-a.it-home-movies-container {
+/* استایل نوتیفیکیشن‌ها */
+.wp-admin .notice {
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    width: 100%;
-    background: #f1e7d7ab;
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-height: 326px;
-    position: relative;
-    margin-top: 50px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 15px 0;
 }
 
-.it-home-main-movies-item-image-container {
-    width: 183px;
-    height: 238px;
-    overflow: hidden;
-    position: absolute;
-    top: -50px;
+.wp-admin .notice-success {
+    border-right: 4px solid #28a745;
+    background: #f0fff4;
 }
-img.it-home-main-movies-item-img {
-    width: 100%;
-    height: 100%;
+
+.wp-admin .notice-error {
+    border-right: 4px solid #dc3545;
+    background: #fff5f5;
+}
+
+.wp-admin .notice-warning {
+    border-right: 4px solid #ffc107;
+    background: #fffcf0;
+}
+
+.wp-admin .notice-info {
+    border-right: 4px solid #17a2b8;
+    background: #f0f9ff;
+}
+
+/* استایل جداول وردپرس */
+.wp-admin .wp-list-table {
+    font-family: 'PeydaWeb';
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    position: relative;
-    min-height: 180px;
-    min-width: 130px;
-}
-
-.it-home-main-movies-item-content {
-    padding: 0 0 3px 0;
-    display: block;
-    flex-grow: 1;
-    position: absolute;
-    bottom: 10px;
-    left: 8px;
-    right: 8px;
-}
-
-h2.it-home-main-movies-item-title {
-    margin: 0 0 12px 0;
-    font-size: 20px;
-    color: #120c02;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-    font-weight: 900;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.it-home-main-movies-item-info {
-    display: flex;
-    margin-bottom: 12px;
+.wp-admin .wp-list-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 2px solid #eaeaea;
+    padding: 12px 10px;
+}
+
+.wp-admin .wp-list-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.wp-admin .wp-list-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* استایل فرم‌های وردپرس */
+.wp-admin input[type="text"],
+.wp-admin input[type="email"],
+.wp-admin input[type="password"],
+.wp-admin input[type="number"],
+.wp-admin input[type="date"],
+.wp-admin select,
+.wp-admin textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-family: 'PeydaWeb';
     font-size: 14px;
-    color: #b07406;
-    align-items: center;
-    justify-content: center;
-    direction: rtl;
 }
 
-.it-home-main-movies-item-ticket {background: #b07406;color: #fff;font-size: 11pt;font-weight: 600;padding: 6px;width: auto;display: inline-block;text-align: center;/* margin-top: 25px; */border-radius: 11px;width: -webkit-fill-available;}
-.it-home-main-quick-access {
-    max-width: 739px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    /* margin: 0 0; */
-    /* padding: 30px 0; */
-    align-items: center;
-    /* margin-bottom: 40px; */
-    /* margin-top: 40px; */
-    position: relative;
-    bottom: 63px;
-}
-a.it-home-main-quick-access-item:hover {
-    background: #57585a;
-    color: #fff !important;
-    text-decoration: none;
-}
-a.it-home-main-quick-access-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 175px;
-    padding-top: 18px;
-    padding-bottom: 14px;
-    color: #efa226;
-    font-size: 14px;
-    position: relative;
-    background: #efefef;
-    border-radius: 13px;
-    font-weight: bold;
-    /* border: 3px solid #57585a; */
-    text-align: center;
-    box-shadow: 1px 4px 9px 1px #00000033;
+.wp-admin input:focus,
+.wp-admin select:focus,
+.wp-admin textarea:focus {
+    border-color: #196ab4;
+    box-shadow: 0 0 0 2px rgba(25, 106, 180, 0.2);
+    outline: none;
 }
 
-.it-home-main-quick-access-item::before {
-    content: '';
-    width: 112px;
-    height: 77px;
+/* استایل دکمه‌های وردپرس */
+.wp-admin .button,
+.wp-admin .button-primary,
+.wp-admin .button-secondary {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'PeydaWeb';
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.wp-admin .button-primary {
+    background: #196ab4;
+    color: white;
+}
+
+.wp-admin .button-primary:hover {
+    background: #155a92;
+    transform: translateY(-2px);
+}
+
+.wp-admin .button-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.wp-admin .button-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* استایل پست‌باکس‌ها */
+.wp-admin .postbox {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.wp-admin .postbox-header {
+    border-bottom: 1px solid #eaeaea;
+    background: #f8f9fa;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+}
+
+.wp-admin .postbox-header h2 {
+    font-family: 'PeydaWeb';
+    color: #333;
+    margin: 0;
+}
+
+.wp-admin .inside {
+    padding: 20px;
+}
+
+/* استایل تب‌های وردپرس */
+.wp-admin .nav-tab-wrapper {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.wp-admin .nav-tab {
+    border: none;
+    background: none;
+    color: #666;
+    font-family: 'PeydaWeb';
+    font-weight: 500;
+    padding: 12px 20px;
+    margin: 0 5px 0 0;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s;
+}
+
+.wp-admin .nav-tab:hover {
+    background: #f8f9fa;
+    color: #196ab4;
+}
+
+.wp-admin .nav-tab-active {
+    background: #196ab4;
+    color: white;
+    border: none;
+}
+
+.wp-admin .nav-tab-active:hover {
+    background: #155a92;
+    color: white;
+}
+
+/* استایل متا‌باکس‌ها */
+.wp-admin .rwmb-field {
+    margin-bottom: 20px;
+}
+
+.wp-admin .rwmb-label {
+    font-family: 'PeydaWeb';
+    font-weight: 600;
+    color: #333;
     margin-bottom: 8px;
 }
 
-.it-home-main-quick-access-item.cinema::before {
-    background: url(./img/arman.png);
-    background-size: 110px;
-}
-.it-home-main-quick-access-item.theater::before{
-    background: url(./img/idee.png);
-    background-size: 110px;
-}
-.it-home-main-quick-access-item.concert::before{
-    background: url(./img/saman.png);
-    background-size: 110px;
-}
-.it-home-main-quick-access-item.entertainment::before{
-    background: url(./img/4.svg);
-    background-size: 110px;
-}
-section.multi {
-    margin-bottom: 40px;
-}
-p.tit14 {
-    direction: rtl;
-    text-align: right;
-    color: #a29f9fdd;
-    text-decoration: line-through;
-}
-
-p.tit16 {
-    direction: rtl;
-    text-align: right;
-    font-weight: bolder;
-    font-size: 12pt;
-}
-button.btn.btn-primary {
-    float: right;
-    background: #efa226 !important;
-    border: none;
-    border-radius: 12px;
-    color: #fff;
-}
-button.btn.btn-primary:hover {
-    background: #fff !important;
-    border: 1px solid #efa226;
-    color: #efa226;
-}
-.newsbox:hover {
-}
-.right {
-    float: right;
-    /* width: 538px; */
-}
-
-
-img.topnews {
-    width: 100%;
-    border-radius: 7px;
-    object-fit: cover;
-}
-.newsb {
-    background: #294f12;
-    min-height: 175px;
-    border-radius: 10px;
-    padding: 8px;
-    margin-bottom: 18px;
-}
-img.topnews5 {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
-section.gallery {
-    background: #58585a;
-    padding: 70px;
-    background-image: url(./img/back.jpg); 
-   
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-p.tit3 {
-    background: #ae8d50;
-    font-size: 12pt;
-    text-align: center;
-    font-weight: 600;
-    color: #fff;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 13px;
-}
-.agahiii2 {
-    font-size: 16pt;
-    font-weight: 700;
-    margin-bottom: 33px;
-    color: #000;
-}
-@media (min-width: 992px) {
-    img.logoar {
-        width: 17% !important;
-    }
-    p.titleee {
-    margin-top: 18px;
-    color: #fff;
-    font-size: 13pt;
-    font-weight: bold;
-}
-}
-a.linkk {
-    background: #fff;
-    border-radius: 10px;
-    padding: 4px;
-    color: #294f12;
-    font-weight: bold;
-    text-decoration: none;
-}
-section#news {
-}
-p.amar2 {
-    color: #fff;
-    font-size: 17px;
-    margin-top: 23px;
-}
-p.titleee {
-    font-size: 14pt;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 16px;
-}
-section#news {
-    padding: 26px;
-    background: #FFF;
-}
-
-
- .service-item {
-  background-color: #FFF;
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 30px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 18px;
-  border-bottom: 5px solid #58585a;
-  min-height: 343px;
-}
-
-.service-item .icon {
-  color: var(--contrast-color);
-  background: #f7941d;
-  margin: 0;
-  width: 64px;
-  height: 64px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
-}
-
- .service-item h3 {
-  font-weight: 700;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-  transition: ease-in-out 0.3s;
-  color: #000;
-}
-
- .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-@media (min-width: 1365px) {
-.service-item:hover {
-    transform: translateY(-10px);
-    border-color: #f7941d;
-  }
-
-.service-item:hover h3 {
-    color: #f7941d;
-  }
-}
-h2.ser {
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 8px 20px;
-    margin: 0;
-    background: #f7941d87;
-    color: #fff;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: 50px;
-}
-.container.text-center.section-title.aos-init.aos-animate {
-    height: 139px;
-}
-.img-fluid {max-width: 100%;height: auto;border-radius: 10px;margin-bottom: 19px;}
-p.fst-italic {
-    direction: rtl;
-    text-align: justify;
-    font-size: 12pt;
-    line-height: 24px;
-}
-section#features {
-    background: #d9d9d9;
-    padding: 60px;
-}
-.feature-box {
-    background-color: #f7941d;
-    padding: 24px 21px;
-    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    height: 80px;
-    border-radius: 10px;
-    direction: rtl;
-}
-
-i.bi.bi-check {
-    background: #fff;
-    color: #000;
-    line-height: 0;
-    padding: 4px;
-    margin-right: 12px;
-    border-radius: 3px;
-    transition: 0.3s;
-    width: 24px;
-    height: 24px;
-}
-
-.align-items-center {
-    align-items: center !important;
-}
-
-.d-flex {
-    display: flex!important;
-    flex-direction: row-reverse;
-}
-
-.feature-box:hover i {
-    background: #000;
-    color: var(--contrast-color);
-}
-section#pricing {
-    color: var(--default-color);
-    background-color: #fff;
-    padding: 60px 0;
-    scroll-margin-top: 90px;
-    overflow: clip;
-}
-
-
-.pricing-tem:hover {
-    transform: scale(1.1);
-}
-
-.pricing-tem {
-    background-color: var(--surface-color);
-    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3s;
-    height: auto;
-    margin-bottom: 18px;
-}
-.price {
-    font-size: 36px;
-    color: var(--heading-color);
-    font-weight: 600;
-    font-family: var(--heading-font);
-}
-
-sup {
-    font-size: 13px;
-    top: -15px;
-    left: -3px;
-    position: relative;
-    /* font-size: .75em; */
-    line-height: 0;
-    vertical-align: baseline;
-}
-.tozihp {
-    font-size: 16px;
-    background: #000;
-    color: #fff;
-    padding: 8px;
-    border-radius: 15px;
-}
-
-.payam {
-    font-size: 10pt;
-    color: #a6a2a2;
-}
-img.picp {
-    width: 50%;
-    height: 85px;
-    object-fit: cover;
-    margin-top: 10px;
+/* استایل ویزارد */
+.wp-admin .wp-core-ui .button-hero {
+    background: #196ab4;
+    border-color: #196ab4;
     border-radius: 8px;
-    float: left;
-    margin-right: 4px;
-    margin-bottom: 5px;
-}
-
-h4.titll {
-    color: #000;
-    font-family: Sahel;
-    font-size: 8pt;
-    font-weight: bold;
-    margin-top: 31px;
-    float: right;
-    direction: rtl;
-}
-
-p.toz {
-    font-family: Sahel;
-    font-size: 8pt;
-    color: #000;
-    direction: rtl;
-    text-align: justify;
-    margin-left: 5px;
-}
-h2.onvan {
-    text-align: center;
-    font-family: sahel;
-    font-weight: bold;
-    color: #20bdbe;
-}
-.header2 {
-    background: #ffffff;
-    padding-top: 9px;
-    /* position: fixed; */
-    z-index: 3000;
-    right: 0;
-    left: 0;
-    opacity: 1;
-    max-width: 100%;
-    box-shadow: black;
-    height: 150px;
-}
-header {
-    background: #ffffff;
-    padding-top: 28px;
-    /* position: fixed; */
-    z-index: 3000;
-    right: 0;
-    left: 0;
-    opacity: 1;
-    max-width: 100%;
-    box-shadow: black;
-    height: auto;
-}
-.news2 {
-    background: #ffffffcf;
-    border-radius: 13px;
-    font-family: sahel;
-}
-
-.cont {
-    padding-top: 12px;
-    direction: rtl;
-    text-align: right;
-    font-size: 11pt;
-    line-height: 25px;
-    padding-bottom: 20px;
-}
-.main2 {
-    background: #f1f2f2;
-    height: 489px;
-    border-top: 2px solid #cfcfcf;
-    border-bottom: 2px solid #cfcfcf;
-    padding-top: 155px;
-}
-p.t1 {
-    font-family: PeydaWeb;
-    font-weight: 500;
-    font-size: 23pt;
-    color: #58595a;
-    margin-top: 18px;
-}
-
-p.t2 {
-    font-size: 20pt;
-    margin-top: -19px;
-    color: #58595b;
+    padding: 12px 24px;
     font-family: 'PeydaWeb';
-    font-weight: 100;
+    font-weight: 600;
+    text-shadow: none;
+    box-shadow: 0 4px 12px rgba(25, 106, 180, 0.3);
+    transition: all 0.3s;
 }
-footer {
-    padding-top: 23px;
-    border-top: 2px solid #cfcfcf;
+
+.wp-admin .wp-core-ui .button-hero:hover {
+    background: #155a92;
+    border-color: #155a92;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(25, 106, 180, 0.4);
 }
-.main43 {
-    background: #ffff;
-    /* height: 454px; */
-    border-top: 2px solid #cfcfcf;
-    /* border-bottom: 2px solid #cfcfcf; */
-}
-.swiper {
-        width: 100%;
-      }
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        /* background: #fff; */
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 244px;
-        
-        object-fit: cover;
-      }
-	  
-.matn223 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 282;
-}	  
-p.tozihda {
+/* استایل پیجر */
+.wp-admin .tablenav {
+    margin: 20px 0;
     font-family: 'PeydaWeb';
-    direction: rtl;
-    text-align: right;
-    font-size: 12pt;
-    line-height: 26px;
-	color: #6d6e70;
 }
 
-a.tabb {
-    font-family: 'PeydaWeb';
-    border-bottom: 1px solid black !important;
-    color: #888888;
+/* استایل سلکتور رنگ */
+.wp-admin .wp-color-result {
+    border-radius: 6px;
 }
 
-li.ttt.active {
-    border: none !important;
-    border-bottom: 1px solid #196ab4 !important;
-}
-a.tabb {
-    border: none !important;
+/* استایل مدیا آپلودر */
+.wp-admin .media-frame {
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-ul.nav.nav-tabs {
-    border: none !important;
-    margin-bottom: 41px;
-    width: auto;
-}
-
-li.ttt {
-    border-bottom: 1px solid #b5aeae;
-    margin-left: 82px;
-}
-.container.mohtavad {
-    text-align: justify;
-    direction: rtl;
-    font-size: 12pt;
-    margin-top: 39px;
+/* استایل تاریخ‌شمار */
+.wp-admin .ui-datepicker {
     font-family: 'PeydaWeb' !important;
-}
-div#gform_wrapper_1 {}
-
-label.gfield_label {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-label {
-    font-family: 'PeydaWeb' !important;
-    text-align: right !important;
-}
-
-option {
-    font-family: 'PeydaWeb' !important;
-}
-
-select#input_1_5 {}
-
-.gform_wrapper input.large, .gform_wrapper input.medium, .gform_wrapper input.small, .gform_wrapper select.large, .gform_wrapper select.medium, .gform_wrapper select.small {
-    font-family: 'PeydaWeb' !important;
-    font-size: 10pt !important;
-}
-
-h3.gform_title {
-    font-family: 'PeydaWeb' !important;
-}
-
-.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
-    background: #196ab4 !important;
-    color: #fff !important;
-    font-size: 11pt !important;
-    padding: 10px !important;
-}
-.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
-    /* font-size: inherit; */
-    font-family: inherit;
-    padding: 5px 4px;
-    letter-spacing: normal;
-    border-radius: 14px;
-    /* border-color: #f0ae62; */
-    background: #d4d4d4 !important;
-    border: 7px;
-    color: #fff !important;
-    width: 346px;
-    margin-top: -5px;
-    right: -55px;
-    /* display: block; */
-    position: relative;
-}
-  .gform_wrapper .gform_footer input.button,.gform_wrapper .gform_footer input[type=submit],.gform_wrapper .gform_page_footer input.button,.gform_wrapper .gform_page_footer input[type=submit] {
-        font-size: 16pt;
-        width: auto;
-        margin: -30px 16px 0 0 !important;
-        border-radius: 16px !important;
-        background: #f0ae62;
-        border: 1px;
-        padding: 7px;
-        top: -31px;
-        position: relative;
+/* استایل‌های ریسپانسیو */
+@media (max-width: 782px) {
+    .wp-admin .wrap {
+        margin: 10px;
+        padding: 15px;
     }
     
-    .mohtavad {
-    text-align: justify;
-    direction: rtl;
-}
-a.aboutee {
-    text-align: right;
-    /* margin-top: 8px; */
-    font-size: 12pt;
-    color: #67686d !important;
-    direction: rtl;
-    margin-bottom: 7px;
-    font-family: peydaweb;
-    direction: rtl;
-    text-decoration: none !important;
-}
-.learndash-wrapper .ld-login-modal {
-    margin: 19% !important;
-    right: 29%;
+    .wp-admin h1 {
+        font-size: 24px;
+    }
+    
+    .wp-admin .nav-tab {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .wp-admin .wp-list-table {
+        font-size: 13px;
+    }
 }
 
-.learndash-wrapper .ld-login-modal .ld-login-modal-register {
-    background: #196ab4;
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.learndash-wrapper:not(.ld-registration__outer-wrapper):not(.learndash-wrapper--modern) .ld-button.ld-button-reverse:hover {
-    background: #ececec !important;
-    color: #196ab4 !important;
+.wp-admin .wrap {
+    animation: fadeIn 0.5s ease;
 }
 
-.learndash-wrapper .ld-login-modal input[type=submit] {
-    background: #196ab4 !important;
+/* استایل آیکون‌ها */
+.wp-admin .dashicons {
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
-.learndash-wrapper .ld-login-modal .ld-login-modal-login .ld-modal-heading {
-    color: #196ab4;
-    font-weight: bold !important;
-}
-.learndash-wrapper .ld-modal {
-    width: 50% !important;
+/* استایل فیلدهای پیشرفته */
+.wp-admin .acf-field {
+    font-family: 'PeydaWeb';
 }
 
-button.ld-enrollment__login-link {
-    background: #196ab4 !important;
-    color: #fff !important;
-    text-decoration: none !important;
-    font-size: 13pt !important;
-    padding: 14px !important;
-    border-radius: 16px !important;
-    font-weight: lighter !important;
+.wp-admin .acf-label {
+    font-weight: 600;
+    color: #333;
 }
 
-.ld-accordion__content {
-}
-span.ld-enrollment__pricing-price {
-    font-size: 14pt !important;
-    color: #196ab4 !important;
+/* استایل جدول سریع ویرایش */
+.wp-admin .inline-edit-row fieldset {
+    font-family: 'PeydaWeb';
 }
 
-.ld-enrollment {
-    border-radius: 11px !important;
+/* استایل لیست‌های آبشاری */
+.wp-admin select[multiple] {
+    min-height: 120px;
+    border-radius: 8px;
 }
 
-.ld-details {
-    border-radius: 11px !important;
+/* استایل چک‌باکس‌ها و رادیو باتن‌ها */
+.wp-admin input[type="checkbox"],
+.wp-admin input[type="radio"] {
+    margin-right: 5px;
 }
 
-span.ld-details__label.ld-details__label--lessons {
-    font-size: 10pt !important;
+.wp-admin label {
+    font-family: 'PeydaWeb';
 }
 
-span.ld-details__label.ld-details__label--topics {
-    font-size: 10pt !important;
+/* استایل فیلد جستجو */
+.wp-admin #post-search-input {
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
 }
 
-.ld-accordion__content {}
-
-.ld-accordion__section.ld-accordion__section--lessons {
-    border-radius:  11px !important;
-    margin-bottom: 18px;
-    border: 1px solid #bedeca;
+/* استایل صفحه تنظیمات */
+.wp-admin .form-table th {
+    padding: 15px 10px 15px 0;
+    width: 200px;
+    font-family: 'PeydaWeb';
+    font-weight: 600;
+    color: #333;
 }
 
-a.ld-accordion__item-title.ld-accordion__item-title--lesson {
-    font-size: 12pt !important;
-    font-weight: bold !important;
-    color: #196ab4 !important;
-}
-.elementor-button.elementor-slide-button.elementor-size-sm {
-    background: #e3dede !important;
-    color: #196ab4 !important;
-    border: none !important;
-    border-radius: 10px !important;
-    font-size: 16pt !IMPORTANT;
-    font-weight: bold !IMPORTANT;
+.wp-admin .form-table td {
+    padding: 15px 10px;
 }
 
-div#countdown-timer {
-    font-size: 16pt;
-    background: #0d572a;
-    padding: 5px;
-    border-radius: 10px;
-}
-.ld-alert-messages {
-    color: #fff !important;
-}
-input.btn-join.button {
-    border-radius: 12px;
-    padding: 8px;
-    border: none;
-    color: #fff !important;
-}
-a.ld-enrollment__login-link {
-    background: #196ab4 !important;
-    color: #fff !important;
-    padding: 11px !important;
-    border-radius: 12px !important;
-    font-size: 12pt !important;
-    text-decoration: none !important;
+/* استایل ستون‌ها */
+.wp-admin .columns-2 {
+    display: flex;
+    gap: 20px;
 }
 
-a.ld-enrollment__join-button {
-    background: #fff !important;
-    border: 1px solid #358c57 !important;
-    padding: 11px !important;
-    border-radius: 17px !important;
-    color: #358c57 !important;
-    font-family: 'PeydaWeb' !important;
+.wp-admin .columns-2 > div {
+    flex: 1;
+}
+
+@media (max-width: 782px) {
+    .wp-admin .columns-2 {
+        flex-direction: column;
+    }
+}
+
+/* استایل تایپوگرافی */
+.wp-admin p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.wp-admin strong {
+    color: #333;
+}
+
+.wp-admin code {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* استایل پیام‌های خطا */
+.wp-admin .error {
+    background: #fff5f5;
+    border: 1px solid #fcc5c5;
+    border-radius: 8px;
+    padding: 15px;
+    color: #dc3545;
+    font-family: 'PeydaWeb';
+}
+
+/* استایل پیام‌های موفقیت */
+.wp-admin .updated {
+    background: #f0fff4;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    padding: 15px;
+    color: #28a745;
+    font-family: 'PeydaWeb';
 }
